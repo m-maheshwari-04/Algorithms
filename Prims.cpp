@@ -1,4 +1,19 @@
- #include<bits/stdc++.h>
+// for finding minimum spanning tree
+// -weighted undirected graph
+// -greedy algo
+
+/* 
+select a node and mark its distance as 0, then update the distance of 
+unvisited neighbouring nodes and then find the next unvisited node with
+minimum distance(top element in the minimum priority queue).
+
+Time Complexity: O((E+V) logV) -> O(E logV)
+
+->finding min element
+    O(E log(E))=O(E log(V^2))= O(2E logV)
+*/
+
+#include<bits/stdc++.h>
 
 #define ll long long
 

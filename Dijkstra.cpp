@@ -1,3 +1,18 @@
+// FOR FINDING SHORTEST DISTANCE FROM SINGLE SOURCE NODE
+// -weighted graph
+// -greedy algo
+
+/* 
+mark the distance of source node as 0, then update the distance of 
+unvisited neighbouring nodes(distace of current node+ weight of edge)
+and then find the next unvisited node with minimum distance
+(top element in the minimum priority queue).
+
+Time Complexity: O(ELogV)) as there will be at most O(E) 
+vertices in priority queue and O(Log E) is same as O(Log V)
+*/
+
+
 #include<bits/stdc++.h>
 
 #define ll long long

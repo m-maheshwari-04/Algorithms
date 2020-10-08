@@ -1,3 +1,10 @@
+/*
+(USING DFS)
+for detecting a cycle we will mark the nodes on the path and
+if a node has an edge to some node which was on this path then
+we will have cycle in the graph.
+*/
+
 #include<bits/stdc++.h>
 #define ll   long long int
 #define endl "\n"

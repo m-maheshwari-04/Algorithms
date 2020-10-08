@@ -1,3 +1,12 @@
+/*
+node with 0 indegree(0 incoming edges) are pushed in a queue
+and then bfs is done. for each neighbour we will decrease the
+neighbours indegree by 1 , and if the neighbours indegree 
+becomes 0 we will puchit in queue.
+
+topological sort:the order in which nodes comes in queue in bfs. 
+*/
+
 #include<bits/stdc++.h>
 #define ll   long long int
 #define endl "\n"

@@ -1,3 +1,8 @@
+/*
+pushfront each node at the time of returning from dfs call
+leaf node comes after parent node in topological sort
+*/
+
 #include<bits/stdc++.h>
 #define ll   long long int
 #define endl "\n"
@@ -26,6 +31,7 @@ class Graph{
     void help(ll node,bool *visited)
     {
         visited[node]=true;
+        //FOR LEXICOGRAPHY ORDER
         sort(l[node].begin(),l[node].end(),compare);
         for(auto itr:l[node])
         {
