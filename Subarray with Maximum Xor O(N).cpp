@@ -70,6 +70,7 @@ public:
     int max_xor(int* a,int n){
         int i,ans=0;
         int cumulative=0;
+        insert(0);
         for(i=0;i<n;i++){
             cumulative^=a[i];
             insert(cumulative);
